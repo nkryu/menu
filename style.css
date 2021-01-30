@@ -1,0 +1,123 @@
+*{
+  margin: 0;
+  padding: 0;
+  color: black;
+  scroll-behavior: smooth;
+}
+header{
+  border-bottom: 1px solid #000;
+}
+.nav{
+  z-index: 8;
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+}
+h1{
+  width: 100%;
+  text-align: center;
+  margin:10px 0;
+  font-size: 2.5rem;
+}
+.line{
+  z-index: 10;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 50px;
+  height: 44px;
+  cursor: pointer;
+}
+
+.line span{
+  position:absolute;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #000;
+  border-radius: 4px;
+  transition: all 1s;
+}
+.line span:nth-of-type(1){
+  top: 0;
+}
+.line span:nth-of-type(2){
+  top: 20px;
+}
+.line span:nth-of-type(3){
+  bottom: 0;
+}
+
+
+.line , line span{
+  display: inline-block;
+}
+
+.menu{
+  z-index: 9;
+  background-color:#eef;
+  opacity: 0;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: -100%;
+  left: -100%;
+}
+
+.menu li{
+  margin: 100px;
+  font-weight: bold;
+  font-size: 20px;
+  list-style: none;
+  cursor: pointer;
+}
+
+.menu li a{
+  text-decoration: none;
+  color: #000;
+}
+
+main{
+  width: 90%;
+  margin: 100px auto;
+}
+main section{
+  border: 1px solid #000;
+  margin-bottom: 30px;
+  text-align: center;
+  padding:0 20px 20px;
+  height: 1000px;
+  font-size: 20px;
+  line-height: 70px;
+}
+
+main section h1{
+  margin: 10px 0;
+}
+
+
+/* クリックアニメーション */
+.line1{ 
+  transform: translateY(20px) rotate(-45deg);
+}
+.line2{  
+  opacity: 0;
+}
+.line3{ 
+  transform: translateY(-20px) rotate(45deg);
+}
+
+.contents{
+  opacity: 1;
+  transform: translate(100%,100%);
+  transition: all 1s;
+}
+.scroll{
+  overflow: hidden;
+}
+
+
