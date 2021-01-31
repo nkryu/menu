@@ -13,10 +13,10 @@ const clickEvent = ()=>{
   }
 }
 
-menu.addEventListener('click',foo);
+menu.addEventListener('click',clickEvent);
 
 for(let i = 0 ; i < li.length ; i++){
-  li[i].addEventListener('click',foo);
+  li[i].addEventListener('click',clickEvent);
 }
 
 
